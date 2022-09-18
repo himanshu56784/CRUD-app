@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    background-image: url('pexels-photo-585752.jpeg');
+    background-repeat:no-repeat ;
+    background-size: 1540px 900px;
+    text-align: center;
+}
+h1
+{
+    margin-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 18px ;
+}
+.red
+{
+    width: 380px;
+    margin: 100px auto;
+    background-color:white;
+}
+.form-control
+{
+  padding: 8px;
+  width:340px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom:1px solid navy;
+  outline: none;
+}
+.demo
+{
+    border: none;
+    background-color:red;
+    color: white;
+    transition: 0.4s;
+}
+.demo:hover
+{
+    background-color:red;
+    width: 330px;
+}

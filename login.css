@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    background-image: url('serach.jpeg');
+    background-size:1540px 900px;
+    background-repeat:no-repeat ;
+}
+#mymenu
+{
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+    text-align: right;
+}
+#mymenu ul li
+{
+    display: inline-block;
+    padding: 25px;
+}
+#mymenu ul li:hover
+{
+    background: blue;
+}
+table
+{
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+#data
+{
+    margin-top:150px ;
+}
+.B
+{
+    
+    background:linear-gradient(red,black);   
+    box-shadow: 10px 10px 10px burlywood ;
+    background-size:100% ;
+    color: white;
+    padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#label2
+{
+	color:white;
+}
+.A
+{  
+    box-shadow: 10px 10px 10px burlywood ;
+    background-size:100% ;  
+    padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;
+}
+.B:hover
+{
+    background:linear-gradient(to left,red,black);   
+}
