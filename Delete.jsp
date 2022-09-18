@@ -1,4 +1,16 @@
 <%@page import="java.sql.*" %>
+<%
+  Cookie c[] = request.getCookies();
+  boolean flag=false;
+  for(Cookie i:c)
+  {
+      String s=i.getName();
+      if(s.equals("uname"))flag=true;
+  }
+  if(flag==false){
+    response.sendRedirect("Login.jsp");
+  }
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>

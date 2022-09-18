@@ -1,6 +1,10 @@
 <%@page import="javax.servlet.http.Cookie" %>
 <%
-    Cookie ck=new Cookie("uname","");
-    ck.setMaxAge(0);
-    response.sendRedirect("Login.jsp");
+  Cookie c[] = request.getCookies();
+  for(Cookie i:c)
+  {
+      String s=i.getName();
+      if(s.equals("uname"))i.setMaxAge(0);
+}
+   response.sendRedirect("Login.jsp");
 %>

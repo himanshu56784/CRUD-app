@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<%
+  Cookie c[] = request.getCookies();
+  boolean flag=false;
+  for(Cookie i:c)
+  {
+      String s=i.getName();
+      if(s.equals("uname"))flag=true;
+  }
+  if(flag==false){
+    response.sendRedirect("Login.jsp");
+  }
+%>
 <html lang="en">
 <head>
         <!-- CSS only -->
