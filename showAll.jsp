@@ -1,6 +1,7 @@
 <%@page import="java.sql.*" %>
 <%
-  Cookie c[] = request.getCookies();
+  response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
+    Cookie c[] = request.getCookies();
   boolean flag=false;
   for(Cookie i:c)
   {

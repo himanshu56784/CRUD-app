@@ -18,6 +18,8 @@ try
             Cookie ck=new Cookie("uname",s1);
             ck.setMaxAge(60*30);
             response.addCookie(ck);
+            
+  response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
         response.sendRedirect("mymenu.jsp");
 	}
 	else

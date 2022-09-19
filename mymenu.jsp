@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <%
+    
+  response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");
+  
   Cookie c[] = request.getCookies();
   boolean flag=false;
   for(Cookie i:c)
